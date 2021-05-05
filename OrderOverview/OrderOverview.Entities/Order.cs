@@ -20,11 +20,14 @@ namespace OrderOverview.Entities
         [DisplayName("Produktname"), Required(ErrorMessage = "{0} muss eingegeben werden")]
         public string ProductName { get; set; }
 
-        public int DealerID { get; set; }
+        [DisplayName("Beschreibung")]
+        public string Description { get; set; }
 
-        public int AssignmentID { get; set; }
+        public int DealerId { get; set; }
 
-        public int OfferID { get; set; }
+        public int AssignmentId { get; set; }
+
+        public int OfferId { get; set; }
 
         public virtual List<Product> Products { get; set; }
         public virtual Dealer Dealers { get; set; }

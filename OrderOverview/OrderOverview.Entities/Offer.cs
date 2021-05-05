@@ -28,7 +28,7 @@ namespace OrderOverview.Entities
 
         public string Status { get; set; }
 
-        public int DealersID{ get; set; }
+        public int DealersId { get; set; }
 
         public int AssignmentsId { get; set; }
 

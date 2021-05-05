@@ -28,9 +28,9 @@ namespace OrderOverview.Entities
         public string Status { get; set; }
 
 
-        public int EmployeesID { get; set; }
+        public int EmployeesId { get; set; }
 
-        public int ProductCategoriesID { get; set; }
+        public int ProductCategoriesId { get; set; }
 
         public virtual Employee Employees { get; set; }
         public virtual ProductCategory ProductCategories { get; set; }

@@ -58,6 +58,7 @@
     <Compile Include="ProductCategory.cs" />
     <Compile Include="ProductProcesses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
