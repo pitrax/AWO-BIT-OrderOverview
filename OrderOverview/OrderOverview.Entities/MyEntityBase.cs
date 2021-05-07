@@ -7,10 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace OrderOverview.Entities
 {
 
-
-    public class EntityBase
-    {    
-        [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public class MyEntityBase
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [DisplayName("Erstellungsdatum")]
@@ -19,7 +18,7 @@ namespace OrderOverview.Entities
         [DisplayName("Geändert am")]
         public DateTime ModifiedOn { get; set; }
 
-        [DisplayName("Geänderter Benutzername"),StringLength(40)]
+        [DisplayName("Geänderter Benutzername"), StringLength(30)]
         public string ModifiedUserName { get; set; }
     }
 }

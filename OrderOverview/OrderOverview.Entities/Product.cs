@@ -11,12 +11,13 @@ namespace OrderOverview.Entities
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
-        [DisplayName("Produktcode"), Key, DatabaseGenerated(DatabaseGeneratedOption.Identity),Required(ErrorMessage ="{0} ist erforderlich")]
+        [DisplayName("Produktcode")]
         public int ProductCode { get; set; }
 
         [DisplayName("Name"),Required(ErrorMessage = "{0} ist erforderlich")]
         public string Name { get; set; }
 
+        [DisplayName("Status"), StringLength(50)]
         public string Status { get; set; }
 
         public int ProductCategoriesId { get; set; }

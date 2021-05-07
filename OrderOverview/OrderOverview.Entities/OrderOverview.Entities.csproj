@@ -50,7 +50,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="Dealer.cs" />
     <Compile Include="Employee.cs" />
-    <Compile Include="EntityBase.cs" />
+    <Compile Include="MyEntityBase.cs" />
     <Compile Include="GeneralProcesses .cs" />
     <Compile Include="Offer.cs" />
     <Compile Include="Order.cs" />

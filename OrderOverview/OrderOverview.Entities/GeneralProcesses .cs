@@ -1,9 +1,10 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace OrderOverview.Entities
 {
-    public class GeneralProcesses:EntityBase
+    public class GeneralProcesses : MyEntityBase
     {
 
         [DisplayName("Belegnummer"), Required(ErrorMessage = "{0} muss eingegeben werden")]
@@ -26,19 +27,18 @@ namespace OrderOverview.Entities
         [DisplayName("Beschreibung"),StringLength(200)]
         public string Description { get; set; }
 
-        
-
-        public int ProcessCode { get; set; }
-
+        [DisplayName("Status"), StringLength(50)]
         public string Status { get; set; }
 
-        public int OrderId { get; set; }
 
-        public int UserId { get; set; }
+        public int ProcessCode { get; set; }
+       
+
+        public int OrdersId { get; set; }
 
         public virtual Order Orders { get; set; }
 
-        public virtual User  Users { get; set; }
+       
 
     }
 }
