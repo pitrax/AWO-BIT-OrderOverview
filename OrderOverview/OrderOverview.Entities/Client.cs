@@ -10,7 +10,7 @@ namespace OrderOverview.Entities
         [DisplayName("Name"), Required(ErrorMessage = "{0} ist erforderlich"), StringLength(60)]
         public string Name { get; set; }
 
-        [DisplayName("Status"), StringLength(50)]
+        [DisplayName("Status"), StringLength(30)]
         public string Status { get; set; }
 
         public virtual List<Branch> Branches { get; set; }

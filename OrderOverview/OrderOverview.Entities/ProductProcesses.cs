@@ -37,15 +37,16 @@ namespace OrderOverview.Entities
         [DisplayName("Beschreibung"), StringLength(200)]
         public string Description { get; set; }
 
-        [StringLength(50)]
+
+        [DisplayName("Status"), StringLength(30)]
         public string Status { get; set; }
 
-        public int UsersId { get; set; }
 
-        public int GetGeneralProcessesId { get; set; }
+
+        public int GeneralProcessesId { get; set; }
 
 
        
-        public virtual GeneralProcesses GetGeneralProcesses { get; set; }
+        public virtual GeneralProcesses GeneralProcesses { get; set; }
     }
 }

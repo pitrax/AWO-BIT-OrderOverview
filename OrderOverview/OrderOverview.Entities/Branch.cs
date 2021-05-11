@@ -7,7 +7,7 @@ namespace OrderOverview.Entities
     public class Branch:MyEntityBase
     {
       
-        [DisplayName("Name"), Required(ErrorMessage = "{0} ist erforderlich"), StringLength(60)]
+        [DisplayName("Name"), Required(ErrorMessage = "{0} ist erforderlich"), StringLength(40)]
         public string Name { get; set; }
 
         [DisplayName("Kostenstelle"), Required(ErrorMessage = "{0} ist erforderlich"), StringLength(20)]
@@ -16,7 +16,7 @@ namespace OrderOverview.Entities
         [DisplayName("Adress"),StringLength(60)]
         public string Adress { get; set; }
 
-        [DisplayName("Status"), StringLength(50)]
+        [DisplayName("Status"), StringLength(30)]
         public string Status { get; set; }
 
         public int ClientsId { get; set; }

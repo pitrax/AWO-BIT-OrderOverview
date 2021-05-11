@@ -18,7 +18,7 @@ namespace OrderOverview.Entities
         [DisplayName("Geändert am")]
         public DateTime ModifiedOn { get; set; }
 
-        [DisplayName("Geänderter Benutzername"), StringLength(30)]
+        [DisplayName("Geänderter Benutzername"), StringLength(30),Required(ErrorMessage = "{0} ist erforderlich")]
         public string ModifiedUserName { get; set; }
     }
 }

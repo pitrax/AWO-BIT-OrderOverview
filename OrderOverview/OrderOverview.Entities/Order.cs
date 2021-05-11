@@ -23,11 +23,14 @@ namespace OrderOverview.Entities
         [DisplayName("Beschreibung"), StringLength(200)]
         public string Description { get; set; }
 
+        [DisplayName("Status"), StringLength(30)]
+        public string Status { get; set; }
+
         public int DealersId { get; set; }
 
         public int AssignmentsId { get; set; }
 
-      
+        public int OffersId { get; set; }
 
         public virtual Dealer Dealers { get; set; }
 

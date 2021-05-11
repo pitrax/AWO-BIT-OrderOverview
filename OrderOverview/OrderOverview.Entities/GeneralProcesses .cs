@@ -27,7 +27,7 @@ namespace OrderOverview.Entities
         [DisplayName("Beschreibung"),StringLength(200)]
         public string Description { get; set; }
 
-        [DisplayName("Status"), StringLength(50)]
+        [DisplayName("Status"), StringLength(30)]
         public string Status { get; set; }
 
         public int ProcessCode { get; set; }

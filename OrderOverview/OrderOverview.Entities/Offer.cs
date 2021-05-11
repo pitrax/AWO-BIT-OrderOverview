@@ -7,7 +7,7 @@ namespace OrderOverview.Entities
 {
     public class Offer: MyEntityBase
     {
-        [DisplayName("Bieterspiegelnummer"), Required(ErrorMessage = "{0} muss eingegeben werden")]
+        [DisplayName("Bieterspiegelnummer"), Required(ErrorMessage = "{0} muss eingegeben werden"), StringLength(50)]
         public string OfferNr { get; set; }
 
         [DisplayName("Produktnummer"),Required(ErrorMessage ="{0} muss eingegeben werden")]
@@ -22,6 +22,7 @@ namespace OrderOverview.Entities
         [DisplayName("Beschreibung"), StringLength(200)]
         public string Description { get; set; }
 
+        [DisplayName("Link von Produkt"), StringLength(200)]
         public string Link { get; set; }
 
         [DisplayName("Nachweis von Angebot"), StringLength(150)]
@@ -30,7 +31,7 @@ namespace OrderOverview.Entities
         [DisplayName("Beschtätigun von Bieterspiegel")]
         public bool OfferConfirmation { get; set; }
 
-        [DisplayName("Status"), StringLength(50)]
+        [DisplayName("Status"), StringLength(30)]
         public string Status { get; set; }
 
         public int DealersId { get; set; }

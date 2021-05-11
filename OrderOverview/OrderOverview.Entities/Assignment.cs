@@ -19,13 +19,13 @@ namespace OrderOverview.Entities
         [DisplayName("Maximalerpreis")]
         public int Quantity { get; set; }
 
-        [DisplayName("Beschreibung"), StringLength(50)]
+        [DisplayName("Beschreibung"), StringLength(200)]
         public string Description { get; set; }
 
         [DisplayName("Ticketnummer"), StringLength(20)]
         public string TicketNr { get; set; }
 
-        [DisplayName("Status"),StringLength(50)]
+        [DisplayName("Status"),StringLength(30)]
         public string Status { get; set; }
 
         public int EmployeesId { get; set; }

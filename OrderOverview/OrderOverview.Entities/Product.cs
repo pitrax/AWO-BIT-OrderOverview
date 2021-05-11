@@ -6,18 +6,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OrderOverview.Entities
 {
-    public class Product
+    public class Product:MyEntityBase
     {
-        [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
+       
 
         [DisplayName("Produktcode")]
         public int ProductCode { get; set; }
 
-        [DisplayName("Name"),Required(ErrorMessage = "{0} ist erforderlich")]
+        [DisplayName("Name"),Required(ErrorMessage = "{0} ist erforderlich"),StringLength(60)]
         public string Name { get; set; }
 
-        [DisplayName("Status"), StringLength(50)]
+        [DisplayName("Status"), StringLength(30)]
         public string Status { get; set; }
 
         public int ProductCategoriesId { get; set; }

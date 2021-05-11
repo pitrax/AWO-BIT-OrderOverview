@@ -7,10 +7,10 @@ namespace OrderOverview.Entities
     public class Dealer:MyEntityBase
     {
        
-        [DisplayName("Name"), Required(ErrorMessage = "{0} ist erforderlich"), StringLength(60)]
+        [DisplayName("Name"), Required(ErrorMessage = "{0} ist erforderlich"), StringLength(40)]
         public string Name { get; set; }
 
-        [DisplayName("Adress"),StringLength(80)]
+        [DisplayName("Adress"),StringLength(60)]
         public string Adress { get; set; }
 
         [DisplayName("E-mail"), StringLength(40)]
@@ -19,7 +19,7 @@ namespace OrderOverview.Entities
         [DisplayName("Phone"), StringLength(20)]
         public string Phone { get; set; }
 
-        [DisplayName("Status"), StringLength(50)]
+        [DisplayName("Status"), StringLength(30)]
         public string Status { get; set; }
 
         public virtual List<Offer> Offers { get; set; }
