@@ -7,7 +7,7 @@ namespace OrderOverview.Entities
 {
     public class Assignment:MyEntityBase
     {
-        [DisplayName("Auftragsnummer"), StringLength(50)]
+        [DisplayName("Auftragsnummer"), StringLength(50) ,Required(ErrorMessage = "{0} muss eingegeben werden")]
         public string AssignmentNr { get; set; }
 
         [DisplayName("Maximalerpreis"), Required(ErrorMessage ="{0} muss eingegeben werden")]
@@ -32,10 +32,16 @@ namespace OrderOverview.Entities
 
         public int ProductCategoryID { get; set; }
 
+      
         public virtual Employee Employees { get; set; }
        
         public virtual ProductCategory ProductCategory { get; set; }
 
-        
+        public virtual List<Offer> Offers { get; set; }
+
+        public virtual List<Order> Orders { get; set; }
+
+
+
     }
 }

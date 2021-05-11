@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -26,5 +27,7 @@ namespace OrderOverview.Entities
         public string Status { get; set; }
 
         public virtual Branch Branches { get; set; }
+
+        public virtual List<Assignment> Assignments { get; set; }
     }
 }

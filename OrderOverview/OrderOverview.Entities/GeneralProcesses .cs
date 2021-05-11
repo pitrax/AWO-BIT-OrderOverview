@@ -30,9 +30,7 @@ namespace OrderOverview.Entities
         [DisplayName("Status"), StringLength(50)]
         public string Status { get; set; }
 
-
         public int ProcessCode { get; set; }
-       
 
         public int OrdersId { get; set; }
 

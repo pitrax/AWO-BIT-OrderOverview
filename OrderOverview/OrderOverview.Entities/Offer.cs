@@ -32,15 +32,18 @@ namespace OrderOverview.Entities
 
         [DisplayName("Status"), StringLength(50)]
         public string Status { get; set; }
-      
 
         public int DealersId { get; set; }
+        public int OrdersId { get; set; }
 
-       
+        public int AssignmentsId { get; set; }
 
         public virtual Dealer Dealers { get; set; }
 
-      
+        public virtual Assignment  Assignments { get; set; }
+
+        public virtual List<Order> Orders { get; set; }
+
 
 
     }

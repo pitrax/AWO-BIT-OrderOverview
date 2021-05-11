@@ -23,17 +23,17 @@ namespace OrderOverview.Entities
         [DisplayName("Beschreibung"), StringLength(200)]
         public string Description { get; set; }
 
-        public int DealerId { get; set; }
+        public int DealersId { get; set; }
 
-        public int AssignmentId { get; set; }
+        public int AssignmentsId { get; set; }
 
-        public int ConfirmedOfferId { get; set; }
+      
 
         public virtual Dealer Dealers { get; set; }
 
-        public virtual Assignment Assignments { get; set; }
+        public virtual Offer Offers { get; set; }
 
-        public virtual Offer ConfirmedOffer { get; set; }
+        public virtual Assignment Assignments { get; set; }
 
     }
 }

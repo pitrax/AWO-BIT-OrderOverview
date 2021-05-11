@@ -22,6 +22,8 @@ namespace OrderOverview.Entities
         [DisplayName("Status"), StringLength(50)]
         public string Status { get; set; }
 
-       
+        public virtual List<Offer> Offers { get; set; }
+
+
     }
 }
