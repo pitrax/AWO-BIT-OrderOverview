@@ -1,0 +1,172 @@
+﻿    <!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Starter Page</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-2">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Auftrag</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleInputFile">Auftragsnummer</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="text" placeholder="AUF-0001-2021-04-14" class="form-control">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">Auftragsgeber</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="text" placeholder="Mitarbeitername" class="form-control">
+                                        <span class="input-group-append">
+                                            <button type="button" class="btn btn-primary btn-flat"><i class="fas fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Einrichtung</label>
+                                <input type="text" class="form-control" id="exampleInput" placeholder="Einrichtungsname">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Mandant</label>
+                                <input type="text" class="form-control" id="exampleInput" placeholder="Mandatname">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Ticketnummer</label>
+                                <input type="text" class="form-control" id="exampleInput" placeholder="z. B. 10001">
+                            </div>
+                            <div class="form-group">
+                                <label>Beschreibung</label>
+                                <textarea class="form-control" rows="3" placeholder="Schreiben Sie hier etwas..."></textarea>
+                            </div>
+                            <div id="accordion">
+                                <div class="card card-primary">
+                                    <div class="card-header">
+                                        <h4 class="card-title w-100">
+                                            <a class="d-block w-100 collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false">
+                                                Gewünschte Produktskategorie
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion" style="">
+                                        <div class="card-body p-0">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Produktskategory</th>
+                                                        <th>Maximalpreis</th>
+                                                        <th>Mit Biterspiegel?</th>
+                                                        <th style="width: 40px"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <select class="form-control">
+                                                                <option>Notebook</option>
+                                                                <option>Handy</option>
+                                                                <option>Pc</option>
+                                                                <option>Drucker</option>
+                                                                <option>Zubehör</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" placeholder="Euro...">
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input class="custom-control-input custom-control-input-danger" type="checkbox" id="customCheckbox4">
+                                                                <label for="customCheckbox4" class="custom-control-label"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td><button type="button" class="badge bg-success">hinzufügen</button></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <hr />
+                                        <div class="card-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>SN</th>
+                                                        <th>Produktskategory</th>
+                                                        <th>Maximalpreis</th>
+                                                        <th>Mit Biterspiegel?</th>
+                                                        <th style="width: 40px"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Notebook</td>
+                                                        <td>600</td>
+                                                        <td>Ja</td>
+                                                        <td><span class="badge bg-danger">Lösen</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Handy</td>
+                                                        <td>500</td>
+                                                        <td>Ja</td>
+                                                        <td><span class="badge bg-danger">Lösen</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Zubehör</td>
+                                                        <td>70</td>
+                                                        <td>Nein</td>
+                                                        <td><span class="badge bg-danger">Lösen</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Bestätigen</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content -->

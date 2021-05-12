@@ -1,0 +1,121 @@
+﻿<!-- Auftragslist -->
+<div class="card">
+    <div class="card-header">
+        <h1 class="m-0 text-dark">Auftrag</h1>
+    </div>
+    <br />
+    <div class="col-md-12">
+        <a class="btn btn-primary" href="/Assignment/Create" role="button"><i class="fas fa-file-signature fa-2x"></i>Erstellen neuen Auftrag </a>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="container-fluid">
+
+                <div class="card card-info collapsed-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Auftragssuche nach Datum </h3>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body">
+                            <!-- Date dd/mm/yyyy -->
+
+                            <div class="form-group">
+                                <label>Anfangsdatum:</label>
+                                <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate">
+                                    <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Enddatum:</label>
+
+                                <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate">
+                                    <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer" style="display: none;">
+                        <button type="button" class="btn btn-outline-info btn-block btn-flat"><i class="fa fa-search"></i> Suche</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="card-body">
+
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Aufragnummer</th>
+                    <th>Mandant</th>
+                    <th>Einrichtung</th>
+                    <th>Mitarbeiter</th>
+                    <th>Datum</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="odd">
+                    <td>AUF000001</td>
+                    <td>Awo</td>
+                    <td>Lübbenau</td>
+                    <td>Vüsal</td>
+                    <td>01.01.2020</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Details</button> <button type="button" class="btn btn-info">Bearbeitung</button> <button type="button" class="btn btn-danger">Löschen</button>
+                    </td>
+
+                </tr>
+                <tr class="odd">
+                    <td>AUF000002</td>
+                    <td>Procon</td>
+                    <td>Lübbenau</td>
+                    <td>Andre</td>
+                    <td>01.01.2020</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Details</button> <button type="button" class="btn btn-info">Bearbeitung</button> <button type="button" class="btn btn-danger">Löschen</button>
+                    </td>
+
+                </tr>
+                <tr class="odd">
+                    <td>AUF000003</td>
+                    <td>Integrations-und Service gGmbh</td>
+                    <td>Guben</td>
+                    <td>Mr.Xmen</td>
+                    <td>01.01.2020</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Details</button> <button type="button" class="btn btn-info">Bearbeitung</button> <button type="button" class="btn btn-danger">Löschen</button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
