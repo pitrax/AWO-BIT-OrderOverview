@@ -6,13 +6,11 @@ using System.Web.Mvc;
 
 namespace OrderOverview.WebApp.Controllers
 {
-    public class HomeController : Controller
+    public class ClientController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+        // GET: Client
+        public ActionResult List()
         {
-            
-
             return View();
         }
     }
